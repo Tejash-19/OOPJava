@@ -16,6 +16,7 @@ package LAB2;
             Counter c2 = new Counter();
             Counter c3 = new Counter();
             Counter c4 = new Counter();
+            Counter c5 = new Counter();
             System.out.println("The number of objects are :"+Counter.getCount());
         }
     }
