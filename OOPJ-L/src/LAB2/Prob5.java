@@ -31,9 +31,16 @@ public class Prob5 {
             a[i] = new student(r,m,c);
         }
         System.out.println("The list of students is: ");
+        student l =a[0];
+        for(int j=0;j<a.length;j++){
+            if(a[j].cgpa<l.cgpa){
+                l=a[j];
+            }
+        }
         for(int i=0;i<n;i++){
             a[i].display();
         }
+        System.out.println("The student with lowest cgpa is : "+l.name);
         sc.close();
     }
 }
